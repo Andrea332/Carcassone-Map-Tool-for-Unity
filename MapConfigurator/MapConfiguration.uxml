@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Foldout text="Grid" value="true" name="Grid">
+        <ui:IntegerField label="Grid Height" name="Grid_Height" />
+        <ui:IntegerField label="Grid Width" name="Grid_Width" />
+    </ui:Foldout>
+    <ui:Foldout text="Deck" name="Deck">
+        <ui:ListView name="deckTiles" style="display: none;" />
+        <uie:PropertyField binding-path="deckTiles" name="deckTiles2" />
+    </ui:Foldout>
+</ui:UXML>
